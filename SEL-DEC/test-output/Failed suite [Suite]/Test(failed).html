@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 05 22:39:30 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (41 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.EditLead.Login()'><b>Login</b><br>Test class: testcases.EditLead</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method Login but has not been marked @Optional or defined
+in C:\SeleniumWorkspace\SEL-DEC\test-output\testng-failed.xml
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12347440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12347440'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method Login but has not been marked @Optional or defined
+in C:\SeleniumWorkspace\SEL-DEC\test-output\testng-failed.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:148)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+</pre></div></td>
+<td>0</td>
+<td>testcases.EditLead@17c74e5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.EditLead.close()'><b>close</b><br>Test class: testcases.EditLead</td>
+<td></td>
+<td>0</td>
+<td>testcases.EditLead@17c74e5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.CreateLead.createLead()'><b>createLead</b><br>Test class: testcases.CreateLead</td>
+<td><div><pre>org.testng.TestNGException: 
+Method public void testcases.CreateLead.createLead(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Throwable requires a @DataProvider named : fetchData
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15065403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15065403'><pre>org.testng.TestNGException: 
+Method public void testcases.CreateLead.createLead(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Throwable requires a @DataProvider named : fetchData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:262)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:418)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CreateLead@b7bfc0</td></tr>
+<tr>
+<td title='testcases.DeleteLead.deleteLead()'><b>deleteLead</b><br>Test class: testcases.DeleteLead</td>
+<td><div><pre>java.lang.Throwable: Method DeleteLead.deleteLead()[pri:0, instance:testcases.DeleteLead@137cf78] depends on not successfully finished methods in group &quot;smoke&quot;
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22860041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22860041'><pre>java.lang.Throwable: Method DeleteLead.deleteLead()[pri:0, instance:testcases.DeleteLead@137cf78] depends on not successfully finished methods in group &quot;smoke&quot;
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='testcases.EditLead.editLead()'><b>editLead</b><br>Test class: testcases.EditLead</td>
+<td></td>
+<td>0</td>
+<td>testcases.EditLead@17c74e5</td></tr>
+<tr>
+<td title='testcases.MergeLead.mergeLead()'><b>mergeLead</b><br>Test class: testcases.MergeLead</td>
+<td><div><pre>java.lang.Throwable: Method MergeLead.mergeLead()[pri:0, instance:testcases.MergeLead@6e2eef] depends on not successfully finished methods in group &quot;smoke&quot;
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3835987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3835987'><pre>java.lang.Throwable: Method MergeLead.mergeLead()[pri:0, instance:testcases.MergeLead@6e2eef] depends on not successfully finished methods in group &quot;smoke&quot;
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>
