@@ -237,9 +237,7 @@ public class SeMethods implements WdMethods {
 		File src = driver.getScreenshotAs(OutputType.FILE);
 		File des = new File("./screenshots/Snap" + timestamp() + ".jpeg");
 		FileUtils.copyFile(src, des);
-
 		// TODO Auto-generated method stub
-
 	}
 
 	public void closeBrowser() {

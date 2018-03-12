@@ -27,8 +27,6 @@ public class ReadingExcel {
 				XSSFCell cell = rows.getCell(j);
 				String cellvalue = cell.getStringCellValue();
 				System.out.println(cellvalue);
-				
-				
 			}
 		}
 		wbook.close();

@@ -47,6 +47,7 @@ public class AssignmentIRCTC {
 		driver.findElementByXPath("//input[@name = 'userRegistrationForm:newsletter']").click();
 		driver.findElementByXPath("//input[@name = 'userRegistrationForm:commercialpromo']").click();
 		driver.findElementByXPath("//input[@name = 'userRegistrationForm:irctcsbicard']").click();
+		
 
 	}
 

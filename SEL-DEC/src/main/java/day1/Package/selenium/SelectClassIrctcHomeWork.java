@@ -13,13 +13,19 @@ public class SelectClassIrctcHomeWork {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
+		
 		ChromeDriver driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
+		
 		driver.get("https://www.irctc.co.in/eticketing/userSignUp.jsf");
 		
 		WebElement we = driver.findElementByXPath("//select[@id = 'userRegistrationForm:countries']");
+		
 		Select country = new Select(we);
+		
 		List<WebElement> alloptions =country.getOptions();
+		
 		int count = 0 ;
 		
 		for(WebElement element : alloptions)
